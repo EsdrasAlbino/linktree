@@ -1,134 +1,134 @@
-# 🔗 Personal Linktree - GitHub Pages
+# 🔗 Linktree Pessoal - GitHub Pages
 
-A beautiful, responsive linktree-style landing page showcasing my key projects.
+Uma landing page estilo linktree bonita e responsiva exibindo meus principais projetos.
 
-## 🎨 Features
+## 🎨 Recursos
 
-- ✨ Modern, gradient design with dark theme
-- 📱 Fully responsive (mobile, tablet, desktop)
-- 🎭 Smooth animations and hover effects
-- ⚡ Fast loading and optimized performance
-- ♿ Accessible with keyboard navigation
-- 🎯 SEO-friendly metadata
+- ✨ Design moderno com gradientes e tema escuro
+- 📱 Totalmente responsivo (mobile, tablet, desktop)
+- 🎭 Animações suaves e efeitos de hover
+- ⚡ Carregamento rápido e performance otimizada
+- ♿ Acessível com navegação por teclado
+- 🎯 Metadados amigáveis para SEO
 
-## 🚀 Projects Featured
+## 🚀 Projetos em Destaque
 
 ### 1. Tangram
-Complete educational platform with:
-- React Native mobile app
-- NestJS backend API
-- PostgreSQL database
-- Machine Learning integration
-- Business Intelligence analytics
+Plataforma educacional completa com:
+- App mobile React Native
+- Backend API NestJS
+- Banco de dados PostgreSQL
+- Integração com Machine Learning
+- Análises de Business Intelligence
 
-**Tech Stack:** React Native, NestJS, PostgreSQL, ML
+**Stack Tecnológico:** React Native, NestJS, PostgreSQL, ML
 
 ### 2. Genius Finance
-AI-powered financial assistant featuring:
-- Next.js frontend
-- NestJS backend
-- WhatsApp bot integration
-- Smart financial analytics
-- Automated transaction tracking
+Assistente financeiro com IA apresentando:
+- Frontend Next.js
+- Backend NestJS
+- Integração com bot WhatsApp
+- Análises financeiras inteligentes
+- Rastreamento automático de transações
 
-**Tech Stack:** Next.js, NestJS, WhatsApp API, AI
+**Stack Tecnológico:** Next.js, NestJS, WhatsApp API, IA
 
 ### 3. BikeRevision System
-B2B bike maintenance management with:
-- WhatsApp-based revision tracking
-- Stripe payment integration
-- QR code client identification
-- Multi-company support
-- Real-time notifications
+Gestão B2B de manutenção de bicicletas com:
+- Rastreamento de revisões via WhatsApp
+- Integração de pagamentos Stripe
+- Identificação de clientes por QR code
+- Suporte multi-empresa
+- Notificações em tempo real
 
-**Tech Stack:** NestJS, WhatsApp Web.js, Stripe, PostgreSQL
+**Stack Tecnológico:** NestJS, WhatsApp Web.js, Stripe, PostgreSQL
 
-## 📦 Deployment to GitHub Pages
+## 📦 Deploy no GitHub Pages
 
-### Method 1: Simple Deployment
+### Método 1: Deploy Simples
 
-1. **Create a new repository** named `<username>.github.io` (replace `<username>` with your GitHub username)
+1. **Crie um novo repositório** chamado `<username>.github.io` (substitua `<username>` pelo seu nome de usuário do GitHub)
 
-2. **Upload the files:**
+2. **Faça upload dos arquivos:**
    ```bash
    cd linktree-github-page
    git init
    git add .
-   git commit -m "Initial commit: Linktree landing page"
+   git commit -m "Initial commit: Landing page estilo linktree"
    git branch -M main
    git remote add origin https://github.com/<username>/<username>.github.io.git
    git push -u origin main
    ```
 
-3. **Access your site** at `https://<username>.github.io`
+3. **Acesse seu site** em `https://<username>.github.io`
 
-### Method 2: Deploy to Existing Repository
+### Método 2: Deploy em Repositório Existente
 
-1. **Upload to any repository:**
+1. **Faça upload para qualquer repositório:**
    ```bash
    git add .
    git commit -m "Add linktree landing page"
    git push
    ```
 
-2. **Enable GitHub Pages:**
-   - Go to repository Settings
-   - Navigate to "Pages" section
-   - Select source: `main` branch, `/root` folder
-   - Save and wait for deployment
+2. **Ative o GitHub Pages:**
+   - Vá para Configurações (Settings) do repositório
+   - Navegue até a seção "Pages"
+   - Selecione a fonte: branch `main`, pasta `/root`
+   - Salve e aguarde o deploy
 
-3. **Access your site** at `https://<username>.github.io/<repository-name>`
+3. **Acesse seu site** em `https://<username>.github.io/<nome-do-repositorio>`
 
-## 🛠️ Customization
+## 🛠️ Personalização
 
-### Update Profile Information
+### Atualizar Informações do Perfil
 
-Edit `index.html`:
-
-```html
-<!-- Change name -->
-<h1 class="name">Your Name</h1>
-
-<!-- Change bio -->
-<p class="bio">Your Title | Your Description</p>
-
-<!-- Update GitHub username -->
-<a href="https://github.com/YourUsername">...</a>
-```
-
-### Update Project Links
-
-Replace the GitHub links in each card:
+Edite `index.html`:
 
 ```html
-<a href="https://github.com/YourUsername/YourProject" ...>
+<!-- Mudar nome -->
+<h1 class="name">Seu Nome</h1>
+
+<!-- Mudar bio -->
+<p class="bio">Seu Título | Sua Descrição</p>
+
+<!-- Atualizar nome de usuário do GitHub -->
+<a href="https://github.com/SeuUsername">...</a>
 ```
 
-### Customize Colors
+### Atualizar Links dos Projetos
 
-Edit `styles.css` variables:
+Substitua os links do GitHub em cada card:
+
+```html
+<a href="https://github.com/SeuUsername/SeuProjeto" ...>
+```
+
+### Personalizar Cores
+
+Edite as variáveis em `styles.css`:
 
 ```css
 :root {
-    --bg-primary: #0f172a;        /* Main background */
-    --accent-tangram: #8b5cf6;    /* Tangram accent color */
-    --accent-genius: #10b981;     /* Genius accent color */
-    --accent-bike: #f59e0b;       /* Bike accent color */
+    --bg-primary: #0f172a;        /* Fundo principal */
+    --accent-tangram: #8b5cf6;    /* Cor de destaque Tangram */
+    --accent-genius: #10b981;     /* Cor de destaque Genius */
+    --accent-bike: #f59e0b;       /* Cor de destaque Bike */
 }
 ```
 
-### Add More Projects
+### Adicionar Mais Projetos
 
-Copy a link card template in `index.html`:
+Copie um template de card de link em `index.html`:
 
 ```html
-<a href="your-link" class="link-card custom-class">
+<a href="seu-link" class="link-card classe-customizada">
     <div class="link-icon">
-        <!-- Your SVG icon -->
+        <!-- Seu ícone SVG -->
     </div>
     <div class="link-content">
-        <h2 class="link-title">Project Name</h2>
-        <p class="link-description">Description</p>
+        <h2 class="link-title">Nome do Projeto</h2>
+        <p class="link-description">Descrição</p>
         <div class="link-tags">
             <span class="tag">Tech 1</span>
             <span class="tag">Tech 2</span>
@@ -138,46 +138,46 @@ Copy a link card template in `index.html`:
 </a>
 ```
 
-## 🎯 Features Included
+## 🎯 Recursos Incluídos
 
-### Animations
-- Fade-in on page load
-- Smooth hover transitions
-- Card lift effect on hover
-- Ripple effect on click
-- Floating particles (optional)
+### Animações
+- Fade-in no carregamento da página
+- Transições suaves no hover
+- Efeito de elevação dos cards ao passar o mouse
+- Efeito ripple ao clicar
+- Partículas flutuantes (opcional)
 
-### Accessibility
-- Keyboard navigation support
-- ARIA labels
-- Focus states
-- Screen reader friendly
+### Acessibilidade
+- Suporte à navegação por teclado
+- Labels ARIA
+- Estados de foco
+- Amigável para leitores de tela
 
 ### Performance
-- Optimized CSS
-- Minimal JavaScript
-- Fast loading times
-- Mobile-first design
+- CSS otimizado
+- JavaScript mínimo
+- Tempos de carregamento rápidos
+- Design mobile-first
 
-## 📱 Browser Support
+## 📱 Suporte de Navegadores
 
-- ✅ Chrome (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Edge (latest)
-- ✅ Mobile browsers
+- ✅ Chrome (última versão)
+- ✅ Firefox (última versão)
+- ✅ Safari (última versão)
+- ✅ Edge (última versão)
+- ✅ Navegadores mobile
 
-## 🔧 Local Development
+## 🔧 Desenvolvimento Local
 
-1. **Clone the repository:**
+1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/YourUsername/your-repo.git
-   cd your-repo
+   git clone https://github.com/SeuUsername/seu-repo.git
+   cd seu-repo
    ```
 
-2. **Open in browser:**
-   - Simply open `index.html` in your browser
-   - Or use a local server:
+2. **Abra no navegador:**
+   - Simplesmente abra `index.html` no seu navegador
+   - Ou use um servidor local:
      ```bash
      # Python
      python -m http.server 8000
@@ -186,61 +186,61 @@ Copy a link card template in `index.html`:
      npx http-server
      
      # VS Code
-     # Use Live Server extension
+     # Use a extensão Live Server
      ```
 
-3. **Access locally:**
-   Open `http://localhost:8000` in your browser
+3. **Acesse localmente:**
+   Abra `http://localhost:8000` no seu navegador
 
-## 📝 File Structure
+## 📝 Estrutura de Arquivos
 
 ```
 linktree-github-page/
-├── index.html          # Main HTML file
-├── styles.css          # Styling and animations
-├── script.js           # Interactive features
-└── README.md          # Documentation
+├── index.html          # Arquivo HTML principal
+├── styles.css          # Estilos e animações
+├── script.js           # Recursos interativos
+└── README.md          # Documentação
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-Feel free to fork this project and customize it for your own use!
+Sinta-se livre para fazer fork deste projeto e personalizá-lo para seu próprio uso!
 
-## 📄 License
+## 📄 Licença
 
-This project is open source and available under the MIT License.
+Este projeto é open source e está disponível sob a Licença MIT.
 
-## 💡 Tips
+## 💡 Dicas
 
-1. **Update your avatar:** The page automatically loads your GitHub avatar. Ensure your GitHub profile has a good photo.
+1. **Atualize seu avatar:** A página carrega automaticamente seu avatar do GitHub. Certifique-se de que seu perfil do GitHub tenha uma boa foto.
 
-2. **Add analytics:** Uncomment the analytics tracking code in `script.js` to track visits.
+2. **Adicione analytics:** Descomente o código de rastreamento de analytics em `script.js` para rastrear visitas.
 
-3. **Custom domain:** You can use a custom domain by adding a `CNAME` file.
+3. **Domínio customizado:** Você pode usar um domínio customizado adicionando um arquivo `CNAME`.
 
-4. **SEO optimization:** Update the meta description in `index.html` for better search visibility.
+4. **Otimização SEO:** Atualize a meta description em `index.html` para melhor visibilidade em buscas.
 
-5. **Social sharing:** Add Open Graph meta tags for better social media sharing.
+5. **Compartilhamento social:** Adicione meta tags Open Graph para melhor compartilhamento em redes sociais.
 
 ## 🌟 Showcase
 
-This linktree page features:
-- Clean, modern design
-- Professional presentation
-- Easy navigation
-- Mobile-optimized experience
-- Fast performance
+Esta página linktree apresenta:
+- Design limpo e moderno
+- Apresentação profissional
+- Navegação fácil
+- Experiência otimizada para mobile
+- Performance rápida
 
-Perfect for sharing on:
-- GitHub profile README
-- Social media bios
-- Email signatures
-- Business cards (QR code)
-- Professional networking
+Perfeito para compartilhar em:
+- README do perfil do GitHub
+- Bios de redes sociais
+- Assinaturas de email
+- Cartões de visita (QR code)
+- Networking profissional
 
 ---
 
-Built with ❤️ for the open-source community.
+Feito com ❤️ para a comunidade open-source.
 
-**[View Live Demo](https://yourusername.github.io)**
+**[Ver Demo ao Vivo](https://seuusername.github.io)**
 # linktree
