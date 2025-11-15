@@ -63,9 +63,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.link-card').forEach(card => {
         card.addEventListener('click', (e) => {
             const title = card.querySelector('.link-title').textContent;
+            const url = card.href;
+            
             console.log(`Projeto clicado: ${title}`);
-            // Adicione seu rastreamento de analytics aqui
-            // Exemplo: gtag('event', 'click', { 'event_category': 'project_link', 'event_label': title });
+            
+            // Enviar evento para Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click_product', {
+                    'event_category': 'Product Link',
+                    'event_label': title,
+                    'value': url
+                });
+            }
+            
+            // Alternativa: Enviar para seu backend próprio
+            // fetch('/api/track', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify({ product: title, url: url, timestamp: new Date() })
+            // });
         });
     });
 
